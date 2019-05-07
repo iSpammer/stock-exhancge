@@ -1,0 +1,14 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Quote
+{% endblock %}
+
+{% block main %}
+    <form action="/quote" method="post">
+        <div class="form-group">
+            <h3>{{symbol}}</h3>
+            <h4>{{name}} stock's value is {{share}} USD</h4>
+        </div>
+    </form>
+{% endblock %}
